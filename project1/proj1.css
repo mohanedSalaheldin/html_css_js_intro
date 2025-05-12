@@ -1,0 +1,54 @@
+
+header {
+    background-image: url('imgs/gallery-header.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 500px;
+    position: relative;
+}
+  
+header::before {
+    content: "";
+    background-image: url('imgs/logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+  
+header h1 {
+    color: white;
+    padding: 60px 20px;
+    font-size: 2.5rem;
+}
+  
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    gap: 10px;
+}
+  
+main a {
+    display: inline-block;
+    margin: 10px;
+}
+  
+main img {
+    width: 180px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+  
+main img:hover {
+    transform: scale(1.05) rotate(2deg);
+}
+  
+  
+  
